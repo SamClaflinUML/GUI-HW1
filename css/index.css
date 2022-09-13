@@ -66,12 +66,15 @@
     background-color: var(--purple);
 
     /* Shadow */
-    box-shadow: 0 10px rgb(31, 31, 31);
+    box-shadow: 0 2px 2px 2px rgb(38, 38, 38);
 
     /* Flex box configuration */
     display: flex;
     justify-content: center;
     align-items: center;
+
+    /* Positioning */
+    position: relative;
 }
 
 /* Footer */
@@ -271,6 +274,14 @@
 .edge-software-link:hover {
     /* Color */
     color: royalblue;
+}
+
+#w3c-validation-icon {
+    /* Positioning */
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translate(0, -50%);
 }
 
 /* Fade-in animation */
