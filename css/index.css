@@ -160,7 +160,7 @@ section {
 }
 
 /* Landing Images Container */
-.landing-image-container a li {
+.landing-image-container a div {
     /* Sizing */
     width: 100%;
     height: 100%;
@@ -196,7 +196,7 @@ section {
 }
 
 /* Landing Images Container Hover Effects */
-.landing-image-container li:hover {
+.landing-image-container a div:hover {
     cursor: pointer;
     transform: scale(1.05);
 }
