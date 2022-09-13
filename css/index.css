@@ -34,7 +34,7 @@
 }
 
 /* All Sections  */
-section {
+.section {
     /* Sizing */
     width: 100vw;
     overflow-x: hidden;
