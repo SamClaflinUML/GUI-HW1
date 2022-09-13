@@ -1,0 +1,285 @@
+/*  
+    File: index.html
+    GUI Assignment: Creating Your First Web Page
+    Sam Claflin, UMass Lowell Computer Science, samuel_claflin@student.uml.edu
+    Copyright (c) 2023 by Sam Claflin. 
+*/
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Ms+Madi&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global */
+* {
+    /* Allow all elements to be sized in the same way */
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    /* Font */
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    list-style: none;
+
+    /* Color */
+    color: white;
+}
+
+/* Variables */
+:root {
+    --purple: rgb(55, 14, 93);
+    --gray: rgb(67, 67, 67);
+    --dark-gray: rgb(42, 42, 42);
+    --cyan: rgb(2, 252, 173);
+    --nav-height: 75px;
+}
+
+/* All Sections  */
+section {
+    /* Sizing */
+    width: 100vw;
+    overflow-x: hidden;
+
+    /* Flex box configuration */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Main Canvas */
+#canvas {
+    /* Sizing */
+    width: 100%;
+    height: calc(100vh - var(--nav-height));
+
+    /* Color */
+    background-color: var(--gray);
+}
+
+/* Nav Bar */
+#nav {
+    /* Sizing */
+    width: 100vw;
+    height: var(--nav-height);
+
+    /* Color */
+    background-color: var(--purple);
+
+    /* Shadow */
+    box-shadow: 0 10px rgb(31, 31, 31);
+
+    /* Flex box configuration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Footer */
+#footer {
+    /* Sizing */
+    width: 100vw;
+    height: 100px;
+
+    /* Color */
+    background-color: var(--purple);
+
+    /* Flex box configuration */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    /* Font configuration */
+    font-family: 'Ms Madi', cursive;
+    font-size: xx-large;
+    font-weight: 300;
+
+    /* Animation configuration */
+    transition-duration: 0.2s;
+}
+
+/* Logo Hover Effects */
+.logo:hover {
+    /* Color */
+    color: var(--cyan);
+
+    /* Scale */
+    transform: scale(110%);
+}
+
+/* Landing Page Title */
+.landing-title {
+    /* Positioning */
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    /* Font configuration */
+    font-size: 75px;
+    font-weight: 300;
+
+    /* Opacity */
+    opacity: 0;
+
+    /* Animation configuration */
+    animation: fade-in 1.5s ease 0.6s forwards;
+}
+
+/* Landing Image Container */
+.landing-image-container {
+    /* Sizing */
+    width: 75%;
+    height: 300px;
+
+    /* Positioning */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0);
+
+    /* Flex configuration */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    /* Opacity */
+    opacity: 0;
+
+    /* Animation configuration */
+    animation: fade-in 1.5s ease 2s forwards;
+}
+
+/* Landing Images Container Links */
+.landing-image-container a {
+    /* Sizing */
+    width: 32%;
+    height: 100%;
+}
+
+/* Landing Images Container */
+.landing-image-container a li {
+    /* Sizing */
+    width: 100%;
+    height: 100%;
+
+    /* Background image */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    /* Borders */
+    border-radius: 20px;
+
+    /* Animation configuration */
+    transition-duration: 0.3s;
+}
+
+/* Landing Image 1 */
+#landing-image-1 {
+    /* Background image */
+    background-image: url("../assets/landing_image_1.jpg");
+}
+
+/* Landing Image 2 */
+#landing-image-2 {
+    /* Background image */
+    background-image: url("../assets/landing_image_2.jpg");
+}
+
+/* Landing Image 3 */
+#landing-image-3 {
+    /* Background image */
+    background-image: url("../assets/landing_image_3.jpg");
+}
+
+/* Landing Images Container Hover Effects */
+.landing-image-container li:hover {
+    cursor: pointer;
+    transform: scale(105%);
+}
+
+/* Company Stats Section */
+#company-stats-section {
+    background-color: var(--dark-gray);
+    padding: 20px 0 10px 0;
+}
+
+/* Section Headers */
+.section-header {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+/* Company Stats Table */
+#company-stats-table {
+    /* Margin */
+    margin: 50px 0 50px 0;
+
+    /* Font configuration */
+    font-size: 25px;
+}
+
+/* Company Stats Table Data */
+#company-stats-table td {
+    padding: 15px;
+}
+
+/* Company Stats Table Background */
+#company-stats-table tr:nth-child(even) {
+    background-color: var(--gray);
+}
+#company-stats-table tr:nth-child(odd) {
+    background-color: black;
+}
+
+/* About Us Section */
+#about-us-section {
+    /* Color */
+    background-color: var(--gray);
+
+    /* Padding */
+    padding: 20px 0 10px 0;
+}
+
+/* Section Content */
+.section-content {
+    /* Font configuration */
+    font-size: 20px;
+    text-align: center;
+    width: 50%;
+
+    /* Margin */
+    margin: 50px 0 50px 0;
+}
+
+/* Edge Software Link */
+.edge-software-link {
+    /* Color */
+    color: var(--cyan);
+
+    /* Margin */
+    margin-left: 10px;
+
+    /* Font configuration */
+    text-decoration: underline;
+}
+
+/* Edge Software Link Hover Effects */
+.edge-software-link:hover {
+    /* Color */
+    color: royalblue;
+}
+
+/* Fade-in animation */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}

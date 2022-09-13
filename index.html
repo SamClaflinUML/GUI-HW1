@@ -1,0 +1,106 @@
+<!--  
+File: index.html
+GUI Assignment: Creating Your First Web Page
+Sam Claflin, UMass Lowell Computer Science, samuel_claflin@student.uml.edu
+Copyright (c) 2023 by Sam Claflin.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel=”stylesheet” href="css/index.css">
+    <title>Sam Claflin HW1</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <div id="nav">
+        <!-- Logo -->
+        <a class="logo" href="/">
+            A Good Company
+        </a>
+    </div>
+
+    <!-- Main Canvas -->
+    <section>
+        <canvas id="canvas"></canvas>
+    </section>
+
+    <!-- Landing Page Title -->
+    <h1 class="landing-title">
+        This... is the landing page.
+    </h1>
+
+    <!-- Landing Page Images -->
+    <ul class="landing-image-container">
+        <a href="https://duckduckgo.com/?t=ffab&q=stock+photos&atb=v275-1&ia=web" target="_blank">
+            <li id="landing-image-1"></li>
+        </a>
+        <a href="https://duckduckgo.com/?t=ffab&q=stock+photos&atb=v275-1&ia=web" target="_blank">
+            <li id="landing-image-2"></li>
+        </a>
+        <a href="https://duckduckgo.com/?t=ffab&q=stock+photos&atb=v275-1&ia=web" target="_blank">
+            <li id="landing-image-3"></li>
+        </a>
+    </ul>
+
+    <!-- Company Stats Section -->
+    <section id="company-stats-section">
+        <!-- Section Header -->
+        <h1 class="section-header">
+            Company Stats
+        </h1>
+
+        <!-- Company Stats Table -->
+        <table id="company-stats-table">
+            <tr>
+                <td>Market Cap</td>
+                <td>$2.35T</td>
+            </tr>
+            <tr>
+                <td>Founded</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>IPO Date</td>
+                <td>2022</td>
+            </tr>
+            <tr>
+                <td>Headquarters Location</td>
+                <td>Boston, MA</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about-us-section">
+        <!-- Section Header -->
+        <h1 class="section-header">
+            About Us
+        </h1>
+
+        <!-- Content -->
+        <p class="section-content">
+            A Good Company was founded in 2022 by a team of passionate visionaries seeking to reshape the tech industry.
+            With a roadmap that begins ambiguously and ends with a lofty payout from selling to Microsoft, it's easy to see why AGC 
+            is the ideal choice for everything tech.
+        </p>
+    </section>
+
+    <!-- Footer -->
+    <div id="footer">
+        <!-- Footer Text -->
+        <p>
+            Check out my company website!
+        </p>
+        <a class="edge-software-link" href="https://edgesoftware.dev" target="_blank">
+            Edge Software
+        </a>
+    </div>
+
+    <!-- JS -->
+    <script src="index.js"></script>
+</body>
+</html>
